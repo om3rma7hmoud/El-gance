@@ -1,0 +1,179 @@
+header nav .login-info {
+  display: none;
+}
+
+header nav .login-info .cart-products {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  background-color: white;
+  width: 250px;
+  z-index: 5;
+}
+
+header nav .login-info .shopping-cart-action {
+  cursor: pointer;
+}
+
+header nav .login-info .cart-products .card {
+  height: 50vh;
+}
+
+header nav .login-info .cart-products .card .product-title {
+  line-height: 28px;
+}
+
+.container .search-field .form-select {
+  font-size: 14px;
+  width: 250px;
+}
+
+.container .search-field input {
+  font-size: 14px;
+}
+
+.products .card .remove-item {
+  display: none;
+}
+
+.products .container .card {
+  transition: 0.3s transform;
+  -webkit-transition: 0.3s transform;
+  -moz-transition: 0.3s transform;
+  -ms-transition: 0.3s transform;
+  -o-transition: 0.3s transform;
+}
+
+.products .container .card img {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.products .container .card:hover {
+  border: 1px solid #0d6efd;
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.products .container .card:hover img {
+  transition: 0.3s;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.products .container .card i {
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .products-in-cart .card {
+    max-height: 230px;
+  }
+}
+
+@media (max-width: 991px) {
+  .products-in-cart .card {
+    height: 550px;
+  }
+}
+
+.products-in-cart .card .image {
+  height: 50%;
+}
+
+.products-in-cart .card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .products-in-cart .card img {
+    height: 100%;
+    object-fit: initial;
+  }
+}
+
+.products-in-cart .card .card-actions .left-side button {
+  padding: 0;
+  text-align: center;
+  width: 32px;
+  height: 35px;
+}
+
+.line {
+  width: 300px;
+  height: 3px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.favorite h2:hover + .line {
+  width: 500px;
+}
+
+@media (max-width: 1191px) {
+  .favorite .card {
+    width: 500px;
+  }
+}
+
+.favorite .card {
+  min-width: 350px;
+  height: 400px;
+}
+
+.favorite .card .favorite-icon {
+  cursor: pointer;
+}
+
+.card-outlined:hover {
+  outline: 2px solid #dc3545;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  transition: 0.3s transform;
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  -webkit-transition: 0.3s transform;
+  -moz-transition: 0.3s transform;
+  -ms-transition: 0.3s transform;
+  -o-transition: 0.3s transform;
+}
+
+/* Start Animation */
+@keyframes click {
+  50% {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+/* End Animation */

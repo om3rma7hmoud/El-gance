@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Elégance</title>
+  </head>
+  <body>
+    <!-- Start navbar -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        aria-label="Main navigation"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"
+            ><svg
+              width="fit-content"
+              height="60"
+              viewBox="0 0 250 80"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Golden ring around E -->
+              <circle
+                cx="28"
+                cy="40"
+                r="25"
+                stroke="#d4af37"
+                stroke-width="2.5"
+                fill="none"
+              />
+
+              <!-- Text -->
+              <text
+                x="15"
+                y="50"
+                font-family="Georgia, serif"
+                font-size="36"
+                fill="black"
+              >
+                Elégance
+              </text>
+            </svg>
+          </a>
+          <div class="links">
+            <a
+              href="./login.html"
+              class="btn btn-outline-primary"
+              aria-label="Login to your account"
+              >Login</a
+            >
+            <a
+              href="./register.html"
+              class="btn btn-outline-success"
+              aria-label="Register a new account"
+              >Register</a
+            >
+          </div>
+          <!-- /links -->
+          <div class="login-info position-relative align-items-center">
+            <div class="user-name"></div>
+            <div class="shopping-cart mx-4">
+              <div class="shopping-cart-action">
+                <i class="fas fa-shopping-cart text-primary"></i>
+                <span class="badge text-primary p-0 fs-6">0</span>
+              </div>
+              <div class="cart-products">
+                <div>
+                  <div class="card h-100">
+                    <div class="card-body p-0">
+                      <div
+                        class="product d-flex gap-4 flex-column flex-md-row my-3 text-center text-md-start bg-secondary-subtle p-3"
+                      >
+                        <div class="left-side">
+                          <div class="product-title mb-3 fs-4 fw-semibold">
+                            Silver<br class="d-none d-md-block" />
+                            necklace
+                          </div>
+                          <div class="quantity">
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              -
+                            </button>
+                            <span class="mx-2">3</span>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              +
+                            </button>
+                          </div>
+                          <!-- /quantity -->
+                        </div>
+                        <!-- /left-side -->
+                        <div class="right-side price fs-5">
+                          Price:<br class="d-none d-md-block" />
+                          450$
+                        </div>
+                        <!--/right-side-->
+                      </div>
+                      <!-- /product -->
+                    </div>
+                    <!-- /card-body -->
+                    <div class="card-footer p-0 text-center">
+                      <a
+                        href="cart-products.html"
+                        class="text-decoration-none d-block px-3 py-2 fs-5 text-dark"
+                        >View All Products</a
+                      >
+                    </div>
+                    <!-- /card-footer -->
+                  </div>
+                  <!-- /card -->
+                </div>
+              </div>
+              <!-- /cart-products -->
+            </div>
+            <!-- /shopping-cart -->
+            <a
+              href="#"
+              class="btn btn-outline-danger logout"
+              aria-label="Log out from the account"
+              >Log out</a
+            >
+          </div>
+          <!-- /login-info -->
+        </div>
+        <!-- /container -->
+      </nav>
+    </header>
+    <!--=== End header ===-->
+    <!-- Start main -->
+    <main>
+      <div class="products-in-cart border-bottom border-light-subtle">
+        <div class="container">
+          <div class="row my-5 row-cols-1 row-cols-lg-2 g-4"></div>
+          <div class="total-price text-center fs-1 fw-semibold mb-3"></div>
+        </div>
+        <!-- /container -->
+      </div>
+      <!-- /products -->
+      <div class="favorite p-5">
+        <h2 class="text-center fs-1 mb-2">Favorite Items</h2>
+        <div class="line bg-danger m-auto"></div>
+        <div class="container mt-4">
+          <div
+            class="content p-3 d-flex justify-content-center justify-content-lg-start justi align-items-center gap-3 flex-lg-nowrap flex-wrap overflow-x-auto"
+          >
+            <p class="m-auto fs-3">There is no products favorite</p>
+          </div>
+          <!-- /content -->
+        </div>
+        <!-- /container -->
+      </div>
+      <!-- /favorite -->
+    </main>
+    <!--=== Start main ===-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/carts.js"></script>
+  </body>
+</html>

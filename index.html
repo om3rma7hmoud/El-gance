@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Elégance</title>
+  </head>
+  <body>
+    <!-- Start navbar -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        aria-label="Main navigation"
+      >
+        <div class="container">
+          <a class="navbar-brand" href=""
+            ><svg
+              width="fit-content"
+              height="60"
+              viewBox="0 0 250 80"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Golden ring around E -->
+              <circle
+                cx="28"
+                cy="40"
+                r="25"
+                stroke="#d4af37"
+                stroke-width="2.5"
+                fill="none"
+              />
+
+              <!-- Text -->
+              <text
+                x="15"
+                y="50"
+                font-family="Georgia, serif"
+                font-size="36"
+                fill="black"
+              >
+                Elégance
+              </text>
+            </svg>
+          </a>
+          <div class="links">
+            <a
+              href="./login.html"
+              class="btn btn-outline-primary"
+              aria-label="Login to your account"
+              >Login</a
+            >
+            <a
+              href="./register.html"
+              class="btn btn-outline-success"
+              aria-label="Register a new account"
+              >Register</a
+            >
+          </div>
+          <!-- /links -->
+          <div class="login-info position-relative align-items-center">
+            <div class="user-name"></div>
+            <div class="shopping-cart mx-4">
+              <div class="shopping-cart-action">
+                <i class="fas fa-shopping-cart text-primary"></i>
+                <span class="badge text-primary p-0 fs-6">0</span>
+              </div>
+              <div class="cart-products">
+                <div>
+                  <div class="card overflow-y-auto">
+                    <div class="card-body p-0"></div>
+                    <!-- /card-body -->
+                    <div class="card-footer text-center">
+                      <a
+                        href="cart-products.html"
+                        class="text-decoration-none fs-5 text-dark"
+                        >View All Products</a
+                      >
+                    </div>
+                    <!-- /card-footer -->
+                  </div>
+                  <!-- /card -->
+                </div>
+              </div>
+              <!-- /cart-products -->
+            </div>
+            <!-- /shopping-cart -->
+            <a
+              href="#"
+              class="btn btn-outline-danger logout"
+              aria-label="Log out from the account"
+              >Log out</a
+            >
+          </div>
+          <!-- /login-info -->
+        </div>
+        <!-- /container -->
+      </nav>
+    </header>
+    <!--=== End header ===-->
+    <!-- Start main -->
+    <main>
+      <div class="search">
+        <div class="container mt-3 mb-5">
+          <form
+            class="search-field d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap gap-3"
+            role="search"
+          >
+            <select class="form-select flex-fill" aria-label="Search type">
+              <option value="product-name" selected>
+                Search by Product Name
+              </option>
+              <option value="category">Search by Category</option>
+            </select>
+            <input
+              type="text"
+              class="form-control w-75"
+              aria-label="Search input"
+              placeholder="Search"
+            />
+            <button
+              type="submit"
+              class="btn btn-dark d-block px-lg-5 flex-fill"
+            >
+              Search
+            </button>
+          </form>
+          <!-- /form -->
+        </div>
+        <!-- /container -->
+      </div>
+      <!-- /search -->
+
+      <div class="products mb-5">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+        </div>
+      </div>
+      <!-- /products -->
+    </main>
+    <!--=== End main ===-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

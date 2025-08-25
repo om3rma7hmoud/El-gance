@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Elégance</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        aria-label="Main navigation"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"
+            ><svg
+              width="fit-content"
+              height="60"
+              viewBox="0 0 250 80"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Golden ring around E -->
+              <circle
+                cx="28"
+                cy="40"
+                r="25"
+                stroke="#d4af37"
+                stroke-width="2.5"
+                fill="none"
+              />
+
+              <!-- Text -->
+              <text
+                x="15"
+                y="50"
+                font-family="Georgia, serif"
+                font-size="36"
+                fill="black"
+              >
+                Elégance
+              </text>
+            </svg>
+          </a>
+        </div>
+        <!-- /container -->
+      </nav>
+    </header>
+    <!--=== End header ===-->
+    <!-- Start main -->
+    <main class="register mb-5">
+      <div class="container">
+        <form class="flex-fill bg-light p-4 mt-5 shadow">
+          <div class="user-name mb-3 d-flex flex-md-nowrap flex-wrap gap-2">
+            <div class="input w-50 flex-fill">
+              <label for="inputFirstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control form-first-name d-block"
+                id="inputFirstName"
+                placeholder="Enter first name"
+              />
+            </div>
+            <!-- /input -->
+            <div class="input w-50 flex-fill">
+              <label for="inputLastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control form-last-name"
+                id="inputLastName"
+                placeholder="Enter last name"
+              />
+            </div>
+            <!-- /input -->
+          </div>
+          <!-- /user-name -->
+          <div class="mb-3 login-email">
+            <label for="InputEmail1" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control form-email"
+              id="inputEmail"
+              placeholder="Enter email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <!-- /login-email -->
+          <div class="mb-3 login-password">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control form-password"
+              id="inputPassword"
+              placeholder="Enter password"
+            />
+          </div>
+          <!-- /login-password -->
+          <button
+            type="submit"
+            class="btn btn-primary form-submit d-block mb-3"
+          >
+            Register
+          </button>
+          Don't have an account?
+          <a href="./login.html" class="text-primary text-decoration-none"
+            >Login</a
+          >
+        </form>
+      </div>
+      <!-- /container -->
+    </main>
+    <!--=== End main ===-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/register.js"></script>
+  </body>
+</html>
